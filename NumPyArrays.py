@@ -12,8 +12,33 @@ arrange = np.arange(0,20,2)
 
 
 
-countingNumbers = np.linspace(0,50,10)
-# works from the first number to the second with jumps of the last.
+counting_numbers = np.linspace(0,50,10)
+# works from the first number to the second with counts by the number of the last.
+
+
+one_digit_arrays = np.ones(6)
+# print 1 six times.
+
+one_digit_double_arrays = np.ones((4,4))
+#Double array of 1s 4x4
+
+identity_matrix = np.eye(4)
+# identity matrix is a matrix useful with linear algebra, two dimensional, diagnal of ones. 
+
+
+random_array = np.random.rand(5)
+#random numbers from 0 to 1
+
+random_array_tuple = np.random.rand(5,5)
+#random numbers from 0 to 1 in a multidemnsional array
+
+random_array_int = np.random.randint(1,100,10)
+#random numbers from 0 to 100, last number is how many numbers you want.
+
+
+new_array = np.arange(25)
+
+ranrarr = np.random.randint(0,50,10)
 
 
 print(my_list)
@@ -21,4 +46,13 @@ print(arr)
 print(my_mat)
 print(arrTwo)
 print(arrange)
-print(countingNumbers)
+print(counting_numbers)
+print(one_digit_arrays)
+print(one_digit_double_arrays)
+print(identity_matrix)
+print(random_array)
+print(random_array_tuple)
+print(random_array_int)
+print("--------------------------")
+print(new_array)
+print(ranrarr)
