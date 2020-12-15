@@ -40,6 +40,23 @@ new_array = np.arange(25)
 
 ranrarr = np.random.randint(0,50,10)
 
+reshaped_array = new_array.reshape(5,5)
+#changes the shape of an array. 
+
+
+max = ranrarr.max()
+#max value of an array
+
+min = ranrarr.min()
+#min value of an array
+
+
+max_position = ranrarr.argmax()
+#position of the highest number in the array
+
+min_position = ranrarr.argmin()
+#position of the lowest number in the array
+
 
 print(my_list)
 print(arr)
@@ -56,3 +73,11 @@ print(random_array_int)
 print("--------------------------")
 print(new_array)
 print(ranrarr)
+print(reshaped_array)
+print("--------------------------")
+print(max)
+print(max_position)
+print(min)
+print(min_position)
+
+print(ranrarr.shape)
