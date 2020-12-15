@@ -79,5 +79,34 @@ print(max)
 print(max_position)
 print(min)
 print(min_position)
-
 print(ranrarr.shape)
+print("--------------------------")
+print("--------------------------")
+print("--------------------------")
+print("--------------------------")
+print("----------ARRAY INDEXING----------------")
+
+array_indexed = np.arange(0,11)
+print(array_indexed[9])
+print(array_indexed[1:4])
+
+array_indexed[0:5] = 100
+print(array_indexed)
+#Changes the first 5 numbers to 100
+
+two_dimen_array = np.array([[5,10,15], [20, 25, 30],[35,40,45],[50,55,60]])
+print(two_dimen_array)
+print(two_dimen_array[0,0])
+print(two_dimen_array[0])
+print(two_dimen_array[1,2])
+
+
+print(two_dimen_array[:2,1:])
+# to access the top right of the 2d Array you can use the above. It grabs everything up to row 2 and column 1 onwards
+print(two_dimen_array[2:,1:])
+
+conditional_selections = np.arange(1,11)
+bool_array = conditional_selections > 5
+print(bool_array)
+print(conditional_selections[bool_array])
+print(conditional_selections[conditional_selections>5])
