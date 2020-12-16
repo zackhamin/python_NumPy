@@ -110,3 +110,57 @@ bool_array = conditional_selections > 5
 print(bool_array)
 print(conditional_selections[bool_array])
 print(conditional_selections[conditional_selections>5])
+
+test_array = np.arange(50).reshape(5,10)
+print(test_array)
+print(test_array[1:3,3:5])
+
+print("--------------------------")
+print("--------------------------")
+print("--------------------------")
+print("--------------------------")
+print("----------ARRAY OPERATIONS----------------")
+
+operation_array = np.arange(0,11)
+print(operation_array)
+add_array = operation_array + operation_array
+minus_array = operation_array - operation_array
+times_array = operation_array * operation_array
+print(add_array)
+print(minus_array)
+print(times_array)
+
+#You can also add to every element in the array e.g. operations_array + 100 will add 100 to every number
+
+print("--------------------------")
+print("--------------------------")
+print("--------------------------")
+print("--------------------------")
+print("----------Test Exercises----------------")
+
+array_zero = np.zeros(10)
+print(array_zero)
+
+array_ones = np.ones(10)
+print(array_ones)
+
+array_fives = np.full(10,5)
+print(array_fives)
+
+array_ints = np.arange(10,50)
+print(array_ints)
+
+array_ints_even = np.arange(10,50,2)
+print(array_ints_even)
+
+array_matrix = np.arange(0,9).reshape(3,3)
+print(array_matrix)
+
+identity_matrix_ones = np.eye(3)
+print(identity_matrix_ones)
+
+random_array_generated = np.random.rand(25)
+print(random_array_generated)
+
+random_array_matrix = np.arange(0,2,100).reshape(10,9)
+print(random_array_matrix)

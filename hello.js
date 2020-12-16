@@ -1,19 +1,28 @@
-var HttpClient = function() {
-  this.get = function(aUrl, aCallback) {
-      var anHttpRequest = new XMLHttpRequest();
-      anHttpRequest.onreadystatechange = function() { 
-          if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
-              aCallback(anHttpRequest.responseText);
-      }
 
-      anHttpRequest.open( "GET", aUrl, true );            
-      anHttpRequest.send( null );
+console.log("This is working")
+a = 50
+b = 30
+c = 20
+d = 10
+
+function calculateOutput(a,b,c,d){
+  if (a === null) {
+    a = 0
+    console.log("Step 1")
+    if(b == null) {
+    b = 0
+    console.log("Step 2")
+     if(c == null) {
+    c = 0
+    console.log("Step 3")
+      if(d == null) {
+    d = 0
+  } else {
+   output =  a + b + c + d
+    console.log(output)
   }
 }
-
-let apiKey = "d80aa45fc1aa372d7362e2f2e54c0abd";
-let city = "portland";
-var client = new HttpClient();
-client.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`, function(response){
-  console.log(response)
-});
+    }
+  }
+}
+calculateOutput(6,12,10)
