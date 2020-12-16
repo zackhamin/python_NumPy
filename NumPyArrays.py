@@ -185,5 +185,5 @@ print(total_sum)
 total_deviation = np.std(mat)
 print(total_deviation)
 
-total_sum_column = np.sum(mat[:5 ,:5])
+total_sum_column = mat.sum(axis=0)
 print(total_sum_column)
