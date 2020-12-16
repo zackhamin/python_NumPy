@@ -147,20 +147,43 @@ print(array_ones)
 array_fives = np.full(10,5)
 print(array_fives)
 
-array_ints = np.arange(10,50)
+array_ints = np.arange(10,51)
 print(array_ints)
 
 array_ints_even = np.arange(10,50,2)
 print(array_ints_even)
 
-array_matrix = np.arange(0,9).reshape(3,3)
+array_matrix = np.arange(9).reshape(3,3)
 print(array_matrix)
 
 identity_matrix_ones = np.eye(3)
 print(identity_matrix_ones)
 
-random_array_generated = np.random.rand(25)
+random_array_generated = np.random.randn(25)
 print(random_array_generated)
 
-random_array_matrix = np.arange(0,2,100).reshape(10,9)
+random_array_matrix = np.linspace(0.01,1,100).reshape(10,10)
 print(random_array_matrix)
+
+array_linear = np.linspace(0,1,20)
+print(array_linear)
+
+print("--------------------------")
+
+mat = np.arange(1,26).reshape(5,5)
+print(mat)
+
+print(mat[2:,1:])
+print(mat[3:4,4:5])
+print(mat[:3,1:2])
+print(mat[4:,0:])
+print(mat[3:,0:])
+
+total_sum = np.sum(mat)
+print(total_sum)
+
+total_deviation = np.std(mat)
+print(total_deviation)
+
+total_sum_column = np.sum(mat[:5 ,:5])
+print(total_sum_column)
